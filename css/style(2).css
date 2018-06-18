@@ -83,8 +83,9 @@ padding-bottom: 1em;
 }
 
 .title h2{
-	font-size: 6vh;
-   top: 30vh;
+	font-size: 8vh;
+   top: 47vh;
+	left: 10vw;
 }
 .title h2,
 .title p{
@@ -97,7 +98,6 @@ padding-bottom: 1em;
 	background: none;
 	display:block;
     position:absolute;
-    left:0vw; 
     bottom:6vw;
     width:70%;
 	font-size: 3vh;
