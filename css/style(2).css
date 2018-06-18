@@ -1,0 +1,275 @@
+.sidebar {
+ }
+
+.navbar a {
+    font-family: 'Amatic SC', cursive;
+	font-weight: 600;
+	font-size: 1.5em;
+    color: red;
+    padding-left: 0;
+	}
+
+@media (max-width: 768px) {
+.container-fluid {
+	padding-left: 0;
+} }
+
+.nav-link.active {
+    color: green;
+}
+
+section {
+    width: 100%;
+	display: block;
+	padding-left: 1.7em;
+	padding-right: 1em;
+	
+}
+
+
+@media (max-width: 768px) {
+  section {
+   padding-top: 80px;
+   } 
+}
+
+.process {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+p {
+    font-family: Alegreya Sans;
+	font-size: 1.2em;
+	background-color: white;
+	background-size: 12em;
+	text-align: center;
+}
+
+h2 {
+    font-family: 'Amatic SC', cursive;
+	font-weight: 900;
+    color: red;
+    text-align: center;
+padding-bottom: 1em;
+}
+.knopka {
+     font-family: 'Amatic SC', cursive;	
+	color: greenyellow;
+	font-weight: 900;
+	position: absolute;
+      left: 35%;
+	padding-top: 3em;
+}
+	
+
+
+@media (max-width: 768px) {
+    .navbar {
+        position: fixed;
+		background: white;
+		padding-right: 1.5em;
+    }
+}
+
+.tree img{
+	width: 100%;
+	
+}
+
+#home {
+	position:relative;
+    padding-bottom: 2em;
+}
+
+.title h2{
+	font-size: 6vh;
+   top: 30vh;
+}
+.title h2,
+.title p{
+	position:absolute; 
+	bottom: 10vh;
+	}
+
+.title p{
+    
+	background: none;
+	display:block;
+    position:absolute;
+    left:0vw; 
+    bottom:6vw;
+    width:70%;
+	font-size: 3vh;
+
+}
+
+@media (max-width:1024px) {
+  .title h2{
+    z-index: 1021;
+	left:0vw; 
+	top: 18vh;
+    width:70%; 
+	font-size: 4vh;
+  }
+	.title p{
+		z-index: 1022;
+		top: 30vw;
+		margin-left: 8vw;
+		font-size: 2.3vh;
+	}
+}
+@media (max-width:768px) {
+  .title h2{
+    z-index: 1021;
+	left:0vw; 
+	top: 60vh;
+    width:70%; 
+	font-size: 7vh;
+  }
+	.title p{
+		z-index: 1022;
+		top: 68vw;
+		margin-left: 8vw;
+		font-size: 3vh;
+	}
+}
+
+@media (max-width: 414px) {
+  .title h2{
+    z-index: 1021;
+	left:0vw; 
+	top: 33vh;
+    width:70%; 
+	font-size: 4.8vh;
+  }
+	.title p{
+		z-index: 1022;
+		top: 68vw;
+		margin-left: 8vw;
+		font-size:2.7vh;
+	}
+}
+@media (max-width: 375px) {
+	  .title h2{
+    z-index: 1021;
+	left:0vw; 
+	top: 30vh;
+    width:70%; 
+	font-size: 5vh;
+  }
+	.title p{
+		z-index: 1022;
+		top: 75vw;
+		margin-left: 8vw;
+		font-size: 2.4vh;
+	}
+}
+
+@media (max-width: 320px) {
+	  .title h2{
+    z-index: 1021;
+	left:0vw; 
+	top: 32vh;
+    width:65%; 
+	font-size: 4.7vh;
+  }
+	.title p{
+		z-index: 1022;
+		top: 75vw;
+		margin-left: 8vw;
+		font-size: 2.2vh;
+	}
+}
+
+
+
+	
+#s2, #s3, #s4, #s5 {
+	background-image: url(../img/background.png);
+	background-size: 85%;
+	padding-bottom: 3em;
+}
+
+#s2, #s5 img{
+	width: 90%;
+	padding-left: 1.2em;
+    
+}
+#s2 p{
+	padding: 1.1em;
+	padding-top: 1.2em;
+
+}
+
+#s3 img {
+	padding-bottom: 2em;
+}
+
+
+#s5 p {
+	padding: 1.5em;
+
+}
+.knopka {
+	padding-bottom: 4em;
+}
+.img-link {
+	padding-bottom: 2em;
+	background: white;
+}
+
+
+.blinking-bird {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  background-image: url(../img/eye-opened.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: contain;
+	z-index: 1;
+  position: relative;
+  overflow: hidden;
+	
+}
+
+.blinking-bird:after {
+    content: " ";
+    display: block;
+    width: 100%;
+	height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/eye-closed.png);
+	background-position: top left;
+	background-repeat: no-repeat;
+  background-size: contain;
+
+	visibility: hidden;
+    animation-name: blinking;
+    animation-duration: 3000ms;
+    animation-delay: -0.5s;
+    animation-timing-function: steps(2);
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes blinking {
+    0% {
+        visibility: visible;
+    }
+    10% {
+        visibility: hidden;
+    }
+}
+
+@media (min-width: 768px) {
+    .blinking-bird {
+	    font-size: 150px;
+        width: 1em;
+		height: 1em;
+    }
+}
